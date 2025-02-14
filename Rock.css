@@ -1,48 +1,62 @@
-.project{
+html, body {
+    height: 100%;
+    margin: 0;
     display: flex;
     justify-content: center;
     align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 800;
+    color: rgb(255, 255, 255);
+    background-color: rgb(113, 109, 109);
 }
+
+body {
+    flex-direction: column;
+    text-align: center;
+}
+
 
 h1{
-    font-size: 30px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    text-align: center;
-}
-
-.timerBtn{
-    width:80px;
-    height:30px;
-    border: 3px solid;
-    border-radius: 12px;
-    background-color: #424242;
-    color:white;
-    cursor: pointer;
-    font-family: consolas, monospace;
-}
-#timeDisplay{
-    font-size: 75px;
-    color: #1cd15b;
-    font-family: consolas, monospace;
-
-}
-#timeContainer{
-    text-align: center;
-    border: 3px solid;
-    border-radius: 25px;
-    background-color: #212121;
-}
-
-.otherProjects{
-    display: flex;
+    font-size: 3.5rem;
+    color: rgb(255, 255, 255);
     justify-content: center;
     align-items: center;
 }
 
-.rock{
-    border-radius: 50px;
+.choices{
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+.choices button{
+    font-size: 7.54rem;
+    min-width: 140px;
+    margin: 0 15px;
+    border-radius: 90px;
+    border: none;
+    background-color: hsl(194, 98%, 47%);
+    cursor: pointer;
+    transition: background-color 0.5 ease;
+}
+.choices button:hover{
+    background-color: hsl(194, 98%, 67%);
 }
 
-img{
-    border-radius: 16px;
+#playerDisplay, #computerDisplay{
+    font-size: 1.9rem;
+}
+#resultDisplay{
+    font-size: 4rem;
+    margin: 25px 0;
+}
+.scoreDisplay{
+    font-size: 2.5rem;
+}
+
+
+.greenText, #playerScoreDisplay{
+    color: hsl(110, 100%, 34%);
+}
+.redText, #computerScoreDisplay{
+    color: hsl(0, 84%, 50%);
 }
