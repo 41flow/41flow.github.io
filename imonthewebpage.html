@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ImOnTheWebpage</title>
+    <title>Lois, I'm on the Webpage!</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
@@ -11,7 +11,7 @@
       div {
         text-align: center;
         display: flex;
-        flex-direction: column; 
+        flex-direction: column;
         justify-content: center;
         align-items: center;
         height: 100vh;
@@ -23,8 +23,15 @@
 </head>
 <body>
     <div>
-        <img src="https://upload.wikimedia.org/wikipedia/en/c/c2/Peter_Griffin.png" alt="Peter Griffin">
+        <img id="characterImage" src="https://upload.wikimedia.org/wikipedia/en/c/c2/Peter_Griffin.png" alt="Peter Griffin">
         <h1>Lois, I'm on the webpage!</h1>
     </div>
+    <script>
+        const characterImage = document.getElementById('characterImage');
+        if (window.location.hash === '#stewie') {
+            characterImage.src = 'https://upload.wikimedia.org/wikipedia/en/0/02/Stewie_Griffin.png';
+            characterImage.alt = 'Stewie Griffin';
+        }
+    </script>
 </body>
 </html>
