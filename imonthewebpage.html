@@ -19,9 +19,21 @@
       body {
         margin: 0;
       }
+      #stewieButton {
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        padding: 10px;
+        background-color: #4CAF50;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+      }
     </style>
 </head>
 <body>
+    <button id="stewieButton">stewieonthewebpage</button>
     <div>
         <img id="characterImage" src="https://upload.wikimedia.org/wikipedia/en/c/c2/Peter_Griffin.png" alt="Peter Griffin">
         <h1>Lois, I'm on the webpage!</h1>
@@ -32,6 +44,11 @@
             characterImage.src = 'https://upload.wikimedia.org/wikipedia/en/0/02/Stewie_Griffin.png';
             characterImage.alt = 'Stewie Griffin';
         }
+
+        document.getElementById('stewieButton').addEventListener('click', () => {
+            window.location.hash = '#stewie';
+            window.location.reload();
+        });
     </script>
 </body>
 </html>
